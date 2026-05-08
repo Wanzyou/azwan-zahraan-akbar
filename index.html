@@ -7,16 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        Azwan Zahraan Akbar | Network Engineer Portfolio
+        Azwan Zahraan Akbar | Portfolio
     </title>
 
-    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -33,38 +29,36 @@
 
         <nav>
 
-            <h1 class="logo">
-                AZWAN<span>.</span>
-            </h1>
+            <!-- LOGO DIHAPUS BIAR NAMA TIDAK KETUTUP -->
 
             <ul>
 
                 <li>
-                    <a href="#home">
+                    <a href="#" onclick="showSection('home')">
                         Home
                     </a>
                 </li>
 
                 <li>
-                    <a href="#about">
+                    <a href="#" onclick="showSection('about')">
                         About
                     </a>
                 </li>
 
                 <li>
-                    <a href="#skills">
+                    <a href="#" onclick="showSection('skills')">
                         Skills
                     </a>
                 </li>
 
                 <li>
-                    <a href="#projects">
+                    <a href="#" onclick="showSection('projects')">
                         Projects
                     </a>
                 </li>
 
                 <li>
-                    <a href="#contact">
+                    <a href="#" onclick="showSection('contact')">
                         Contact
                     </a>
                 </li>
@@ -77,11 +71,11 @@
 
     <!-- HOME -->
 
-    <section id="home" class="hero page-section active">
+    <section id="home" class="page-section active">
 
         <div class="hero-container">
 
-            <!-- LEFT -->
+            <!-- TEXT -->
 
             <div class="hero-text">
 
@@ -96,29 +90,25 @@
                 <p>
 
                     Siswa SMKN 13 Bandung jurusan
-                    Teknik Jaringan Komputer dan Telekomunikasi.
-
-                    Memiliki minat besar dalam networking,
-                    Cisco, web development,
+                    Teknik Jaringan Komputer dan Telekomunikasi
+                    yang memiliki minat besar dalam networking,
+                    Cisco, MikroTik,
+                    web development,
                     dan teknologi modern.
 
                 </p>
 
-                <!-- BUTTON -->
-
                 <div class="hero-buttons">
 
-                    <a href="#about" class="btn">
+                    <a href="#" class="btn" onclick="showSection('about')">
                         Explore More
                     </a>
 
-                    <a href="#contact" class="btn-outline">
+                    <a href="#" class="btn-outline" onclick="showSection('contact')">
                         Contact Me
                     </a>
 
                 </div>
-
-                <!-- SOCIAL -->
 
                 <div class="social-links">
 
@@ -134,7 +124,7 @@
 
             </div>
 
-            <!-- RIGHT -->
+            <!-- IMAGE -->
 
             <div class="hero-image">
 
@@ -150,7 +140,7 @@
 
     <!-- ABOUT -->
 
-    <section id="about" class="section page-section">
+    <section id="about" class="page-section dark">
 
         <div class="section-wrapper">
 
@@ -174,20 +164,30 @@
 
                     <p>
 
-                        Saya adalah siswa SMKN 13 Bandung
-                        yang memiliki minat besar
-                        dalam dunia networking,
-                        Cisco, cybersecurity,
-                        dan pengembangan website modern.
+                        Saya adalah siswa kelas XI
+                        SMKN 13 Bandung jurusan
+                        Teknik Jaringan Komputer dan Telekomunikasi.
 
                     </p>
 
                     <p>
 
-                        Saya terus belajar dan mengembangkan
-                        kemampuan untuk menjadi
-                        seorang Network Engineer profesional
-                        di masa depan.
+                        Memiliki dasar pemahaman
+                        jaringan komputer,
+                        konfigurasi routing,
+                        switching,
+                        VLAN,
+                        serta basic MikroTik dan Cisco.
+
+                    </p>
+
+                    <p>
+
+                        Memiliki sertifikasi
+                        Cisco Networking Academy
+                        Networking Basics
+                        dan aktif mengembangkan skill
+                        di bidang IT dan networking.
 
                     </p>
 
@@ -201,7 +201,7 @@
 
     <!-- SKILLS -->
 
-    <section id="skills" class="section dark page-section">
+    <section id="skills" class="page-section">
 
         <div class="section-wrapper">
 
@@ -222,9 +222,11 @@
                     </h3>
 
                     <p>
-                        Routing, VLAN,
+                        Routing,
                         Switching,
-                        OSPF, NAT.
+                        VLAN,
+                        OSPF,
+                        NAT.
                     </p>
 
                 </div>
@@ -236,8 +238,22 @@
                     </h3>
 
                     <p>
-                        Cisco basic configuration
-                        dan troubleshooting.
+                        Basic Cisco configuration
+                        dan troubleshooting jaringan.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        MikroTik
+                    </h3>
+
+                    <p>
+                        PPPoE,
+                        VLAN,
+                        dan basic router management.
                     </p>
 
                 </div>
@@ -249,7 +265,8 @@
                     </h3>
 
                     <p>
-                        Responsive modern website.
+                        Responsive modern website
+                        dengan desain elegant.
                     </p>
 
                 </div>
@@ -262,7 +279,7 @@
 
     <!-- PROJECTS -->
 
-    <section id="projects" class="section page-section">
+    <section id="projects" class="page-section dark">
 
         <div class="section-wrapper">
 
@@ -279,15 +296,30 @@
                 <div class="card">
 
                     <h3>
-                        Routing Configuration
+                        VoIP Network
                     </h3>
 
                     <p>
 
-                        Konfigurasi jaringan menggunakan
-                        RIP, OSPF,
-                        VLAN,
-                        dan NAT.
+                        Konfigurasi komunikasi
+                        VoIP dan pengujian
+                        jaringan komputer.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>
+                        VLAN & PPPoE
+                    </h3>
+
+                    <p>
+
+                        Implementasi VLAN
+                        dan PPPoE menggunakan
+                        router MikroTik.
 
                     </p>
 
@@ -302,24 +334,8 @@
                     <p>
 
                         Website modern menggunakan
-                        HTML,
-                        CSS,
-                        dan JavaScript.
-
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>
-                        Network Topology
-                    </h3>
-
-                    <p>
-
-                        Mendesain simulasi topologi
-                        jaringan sekolah dan kantor.
+                        HTML dan CSS
+                        dengan tampilan elegant.
 
                     </p>
 
@@ -333,7 +349,7 @@
 
     <!-- CONTACT -->
 
-    <section id="contact" class="section dark page-section">
+    <section id="contact" class="page-section">
 
         <div class="section-wrapper">
 
@@ -374,8 +390,6 @@
         </p>
 
     </footer>
-
-    <!-- SCRIPT -->
 
     <script src="script.js"></script>
 
