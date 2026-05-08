@@ -1,30 +1,23 @@
-// SCROLL ANIMATION
+const navLinks = document.querySelectorAll("nav ul li a");
 
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".page-section");
 
-window.addEventListener("scroll", () => {
+navLinks.forEach(link => {
 
-    sections.forEach(section => {
+    link.addEventListener("click", function(e){
 
-        const sectionTop = section.getBoundingClientRect().top;
+        e.preventDefault();
 
-        if(sectionTop < window.innerHeight - 100){
+        const target = this.getAttribute("href").substring(1);
 
-            section.style.opacity = "1";
-            section.style.transform = "translateY(0px)";
+        sections.forEach(section => {
 
-        }
+            section.classList.remove("active");
+
+        });
+
+        document.getElementById(target).classList.add("active");
 
     });
-
-});
-
-// INITIAL STYLE
-
-sections.forEach(section => {
-
-    section.style.opacity = "0";
-    section.style.transform = "translateY(50px)";
-    section.style.transition = "1s";
 
 });
