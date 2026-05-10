@@ -103,12 +103,20 @@ enBtn.addEventListener("click", () => {
 
 const profile3d = document.querySelector(".profile-3d-wrap");
 
-document.addEventListener("mousemove", (e) => {
+if(window.innerWidth > 768){
 
-    let x = (window.innerWidth / 2 - e.pageX) / 35;
-    let y = (window.innerHeight / 2 - e.pageY) / 35;
+    document.addEventListener("mousemove", (e) => {
 
-    profile3d.style.transform =
-    `rotateY(${-x}deg) rotateX(${y}deg)`;
+        let x = (window.innerWidth / 2 - e.pageX) / 35;
+        let y = (window.innerHeight / 2 - e.pageY) / 35;
 
-});
+        profile3d.style.transform =
+        `rotateY(${-x}deg) rotateX(${y}deg)`;
+
+    });
+
+}else{
+
+    profile3d.style.transform = "none";
+
+}

@@ -837,3 +837,234 @@ footer{
     }
 
 }
+
+/* ========================= */
+/* FIX BUG RESPONSIVE */
+/* ========================= */
+
+body{
+    overflow-x:hidden;
+}
+
+/* FIX IMAGE */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* FIX 3D PROFILE */
+
+.profile-3d-wrap{
+    will-change:transform;
+    transform-style:preserve-3d;
+}
+
+/* FIX CONTACT CARD */
+
+.contact-card{
+    min-height:220px;
+}
+
+/* FIX NAVBAR MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        padding:0;
+    }
+
+    nav{
+        width:100%;
+        padding:18px 20px;
+    }
+
+    .nav-menu{
+        width:100%;
+        justify-content:center;
+        gap:14px;
+    }
+
+    .nav-menu a{
+        font-size:14px;
+    }
+
+    .language-switch{
+        margin-top:5px;
+    }
+
+}
+
+/* FIX HERO MOBILE */
+
+@media(max-width:768px){
+
+    .hero{
+        padding-top:220px;
+        min-height:auto;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+        line-height:1.25;
+    }
+
+    .hero-content p{
+        font-size:15px;
+        line-height:1.9;
+    }
+
+    .hero-badge{
+        padding:12px 20px;
+        font-size:13px;
+    }
+
+}
+
+/* FIX ABOUT */
+
+@media(max-width:980px){
+
+    .about-image{
+        max-width:420px;
+        margin:auto;
+    }
+
+    .about-text{
+        text-align:center;
+    }
+
+}
+
+/* FIX EXPERIENCE GRID */
+
+@media(max-width:768px){
+
+    .experience-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* FIX CERTIFICATE */
+
+@media(max-width:980px){
+
+    .certificate-box{
+        gap:35px;
+    }
+
+    .certificate-info{
+        text-align:center;
+    }
+
+}
+
+/* FIX ORB MOBILE */
+
+@media(max-width:768px){
+
+    .orb{
+        filter:blur(90px);
+        opacity:0.1;
+    }
+
+    .orb-one{
+        width:220px;
+        height:220px;
+    }
+
+    .orb-two{
+        width:200px;
+        height:200px;
+    }
+
+    .orb-three{
+        width:180px;
+        height:180px;
+    }
+
+}
+
+/* FIX CURSOR DI HP */
+
+@media(max-width:768px){
+
+    .cursor-light{
+        display:none;
+    }
+
+}
+
+/* FIX 3D EFFECT MOBILE */
+
+@media(max-width:768px){
+
+    .profile-3d-wrap{
+        transform:none !important;
+    }
+
+    .profile-ring{
+        animation:none;
+    }
+
+}
+
+/* FIX BUTTON MOBILE */
+
+@media(max-width:500px){
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn,
+    .btn-outline{
+        width:100%;
+        max-width:280px;
+        text-align:center;
+    }
+
+}
+
+/* FIX LARGE TEXT */
+
+@media(max-width:480px){
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .about-text h3{
+        font-size:28px;
+    }
+
+    .certificate-info h3{
+        font-size:30px;
+    }
+
+}
+
+/* FIX SAFARI IOS */
+
+.hero,
+.section,
+.exp-card,
+.skill-card,
+.contact-card{
+    transform:translateZ(0);
+    backface-visibility:hidden;
+}
