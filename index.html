@@ -4,131 +4,184 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
         Azwan Zahraan Akbar | Portfolio
     </title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- FONT -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICON -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+    <!-- CURSOR -->
+
+    <div class="cursor-light"></div>
+
     <!-- BACKGROUND -->
 
-    <div class="background-glow glow1"></div>
-    <div class="background-glow glow2"></div>
+    <div class="gradient-bg"></div>
+
+    <div class="grid-bg"></div>
+
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="orb orb-three"></div>
 
     <!-- HEADER -->
 
-    <header>
+    <header id="header">
 
         <nav>
 
-            <ul>
+            <!-- MENU -->
+
+            <ul class="nav-menu">
 
                 <li>
-                    <a href="#" onclick="showSection('home')">
+                    <a href="#home" class="active-link nav-text" data-id="Home" data-en="Home">
                         Home
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" onclick="showSection('about')">
-                        About
+                    <a href="#about" class="nav-text" data-id="Tentang" data-en="About">
+                        Tentang
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" onclick="showSection('skills')">
-                        Skills
+                    <a href="#experience" class="nav-text" data-id="Pengalaman" data-en="Experience">
+                        Pengalaman
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" onclick="showSection('projects')">
-                        Projects
+                    <a href="#skills" class="nav-text" data-id="Keterampilan" data-en="Skills">
+                        Keterampilan
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" onclick="showSection('contact')">
-                        Contact
+                    <a href="#certificate" class="nav-text" data-id="Sertifikat" data-en="Certificate">
+                        Sertifikat
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-text" data-id="Kontak" data-en="Contact">
+                        Kontak
                     </a>
                 </li>
 
             </ul>
 
+            <!-- LANGUAGE -->
+
+            <div class="language-switch">
+
+                <button id="id-btn" class="lang-btn active-lang">
+                    ID
+                </button>
+
+                <button id="en-btn" class="lang-btn">
+                    EN
+                </button>
+
+            </div>
+
         </nav>
 
     </header>
 
-    <!-- HOME -->
+    <!-- HERO -->
 
-    <section id="home" class="page-section active">
+    <section id="home" class="hero">
 
-        <div class="hero-container">
+        <!-- 3D -->
 
-            <div class="hero-text">
+        <div class="hero-3d">
 
-                <h2>
-                    FUTURE NETWORK ENGINEER
-                </h2>
+            <div class="glass-cube cube1"></div>
 
-                <h1>
-                    Azwan Zahraan Akbar
-                </h1>
+            <div class="glass-cube cube2"></div>
 
-                <p>
+            <div class="floating-circle"></div>
 
-                    Siswa SMKN 13 Bandung jurusan
-                    Teknik Jaringan Komputer dan Telekomunikasi
-                    yang memiliki minat besar dalam networking,
-                    Cisco, MikroTik,
-                    web development,
-                    dan teknologi modern.
+            <div class="line-glow line1"></div>
 
-                </p>
+            <div class="line-glow line2"></div>
 
-                <div class="hero-buttons">
+            <div class="line-glow line3"></div>
 
-                    <a href="#" class="btn" onclick="showSection('about')">
-                        Explore More
-                    </a>
+        </div>
 
-                    <a href="#" class="btn-outline" onclick="showSection('contact')">
-                        Contact Me
-                    </a>
+        <!-- CONTENT -->
 
-                </div>
+        <div class="hero-content">
 
-                <div class="social-links">
+            <span class="hero-badge">
 
-                    <a href="https://www.instagram.com/_wanzzyy?igsh=dnc1YmhkdHEwYjV4" target="_blank">
-                        Instagram
-                    </a>
+                <span class="text"
+                    data-id="Selamat Datang di Portfolio Saya"
+                    data-en="Welcome To My Portfolio">
 
-                    <a href="mailto:azwanakbar864@gmail.com">
-                        Email
-                    </a>
+                    Selamat Datang di Portfolio Saya
 
-                    <a href="https://azwanakbar.blogspot.com/" target="_blank">
-                        Blogger
-                    </a>
+                </span>
 
-                </div>
+            </span>
 
-            </div>
+            <h1 class="text"
+                data-id="Future Network Engineer & IT Enthusiast"
+                data-en="Future Network Engineer & IT Enthusiast">
 
-            <div class="hero-image">
+                Future Network Engineer & IT Enthusiast
 
-                <div class="image-circle"></div>
+            </h1>
 
-                <img src="images/profile.jpg" alt="Azwan">
+            <p class="text"
+               data-id="Portfolio modern dengan tampilan elegan yang menampilkan perjalanan, keterampilan, dan pengalaman saya di bidang jaringan komputer dan teknologi."
+               data-en="Modern elegant portfolio showcasing my journey, skills, and experience in networking and technology.">
+
+                Portfolio modern dengan tampilan elegan
+                yang menampilkan perjalanan,
+                keterampilan,
+                dan pengalaman saya
+                di bidang jaringan komputer dan teknologi.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#about" class="btn text"
+                   data-id="Jelajahi"
+                   data-en="Explore">
+
+                    Jelajahi
+
+                </a>
+
+                <a href="#contact" class="btn-outline text"
+                   data-id="Hubungi Saya"
+                   data-en="Contact Me">
+
+                    Hubungi Saya
+
+                </a>
 
             </div>
 
@@ -138,52 +191,251 @@
 
     <!-- ABOUT -->
 
-    <section id="about" class="page-section dark">
+    <section id="about" class="section">
 
-        <div class="section-wrapper">
+        <div class="section-title">
 
-            <div class="section-title">
+            <span class="text"
+                  data-id="Tentang Saya"
+                  data-en="About Me">
 
-                <h2>
-                    About Me
-                </h2>
+                Tentang Saya
+
+            </span>
+
+            <h2>
+                Azwan Zahraan Akbar
+            </h2>
+
+        </div>
+
+        <div class="about-container">
+
+            <!-- FOTO -->
+
+            <div class="about-image">
+
+                <div class="about-glow"></div>
+
+                <div class="profile-3d-wrap">
+
+                    <div class="profile-ring"></div>
+
+                    <img src="images/profile.jpg" alt="Azwan">
+
+                </div>
 
             </div>
 
-            <div class="about-container">
+            <!-- TEXT -->
 
-                <div class="about-image">
+            <div class="about-text">
 
-                    <img src="images/profile.jpg" alt="About">
+                <h3 class="text"
+                    data-id="Siswa TKJ & Teknologi"
+                    data-en="TKJ Student & Technology">
+
+                    Siswa TKJ & Teknologi
+
+                </h3>
+
+                <p class="text"
+                   data-id="Saya adalah siswa SMKN 13 Bandung jurusan Teknik Jaringan Komputer dan Telekomunikasi yang memiliki minat besar di bidang jaringan komputer, Cisco, MikroTik, dan teknologi modern."
+                   data-en="I am a student of SMKN 13 Bandung majoring in Computer and Network Engineering with a strong passion for networking, Cisco, MikroTik, and modern technology.">
+
+                    Saya adalah siswa SMKN 13 Bandung
+                    jurusan Teknik Jaringan Komputer dan Telekomunikasi
+                    yang memiliki minat besar
+                    di bidang jaringan komputer,
+                    Cisco,
+                    MikroTik,
+                    dan teknologi modern.
+
+                </p>
+
+                <p class="text"
+                   data-id="Memiliki sertifikasi Cisco Networking Academy Networking Basics dan terus mengembangkan kemampuan melalui proyek sekolah dan eksplorasi teknologi."
+                   data-en="Certified by Cisco Networking Academy Networking Basics and continuously improving my skills through school projects and technology exploration.">
+
+                    Memiliki sertifikasi
+                    Cisco Networking Academy Networking Basics
+                    dan terus mengembangkan kemampuan
+                    melalui proyek sekolah
+                    dan eksplorasi teknologi.
+
+                </p>
+
+                <div class="about-cards">
+
+                    <div class="mini-card">
+
+                        <h4>
+                            Location
+                        </h4>
+
+                        <p>
+                            Bandung, Indonesia
+                        </p>
+
+                    </div>
+
+                    <div class="mini-card">
+
+                        <h4>
+                            Education
+                        </h4>
+
+                        <p>
+                            SMKN 13 Bandung
+                        </p>
+
+                    </div>
 
                 </div>
 
-                <div class="about-text">
+            </div>
 
-                    <p>
-                        Saya adalah siswa kelas XI
-                        SMKN 13 Bandung jurusan
-                        Teknik Jaringan Komputer dan Telekomunikasi.
-                    </p>
+        </div>
 
-                    <p>
-                        Memiliki dasar pemahaman
-                        jaringan komputer,
-                        konfigurasi routing,
-                        switching,
-                        VLAN,
-                        serta basic MikroTik dan Cisco.
-                    </p>
+    </section>
 
-                    <p>
-                        Memiliki sertifikasi
-                        Cisco Networking Academy
-                        Networking Basics
-                        dan aktif mengembangkan skill
-                        di bidang IT dan networking.
-                    </p>
+    <!-- EXPERIENCE -->
 
-                </div>
+    <section id="experience" class="section dark">
+
+        <div class="section-title">
+
+            <span class="text"
+                  data-id="Pengalaman"
+                  data-en="Experience">
+
+                Pengalaman
+
+            </span>
+
+            <h2 class="text"
+                data-id="Proyek Sekolah"
+                data-en="School Projects">
+
+                Proyek Sekolah
+
+            </h2>
+
+        </div>
+
+        <div class="experience-grid">
+
+            <div class="exp-card">
+
+                <div class="exp-line"></div>
+
+                <h3>
+                    VoIP Network
+                </h3>
+
+                <p class="text"
+                   data-id="Melakukan konfigurasi VoIP dan simulasi komunikasi jaringan."
+                   data-en="Configured VoIP and simulated network communication.">
+
+                    Melakukan konfigurasi VoIP
+                    dan simulasi komunikasi jaringan.
+
+                </p>
+
+            </div>
+
+            <div class="exp-card">
+
+                <div class="exp-line"></div>
+
+                <h3>
+                    VLAN & PPPoE
+                </h3>
+
+                <p class="text"
+                   data-id="Implementasi VLAN dan PPPoE menggunakan MikroTik."
+                   data-en="Implemented VLAN and PPPoE using MikroTik.">
+
+                    Implementasi VLAN
+                    dan PPPoE menggunakan MikroTik.
+
+                </p>
+
+            </div>
+
+            <div class="exp-card">
+
+                <div class="exp-line"></div>
+
+                <h3>
+                    Cisco Packet Tracer
+                </h3>
+
+                <p class="text"
+                   data-id="Membangun simulasi topologi jaringan menggunakan Cisco Packet Tracer."
+                   data-en="Built network topology simulations using Cisco Packet Tracer.">
+
+                    Membangun simulasi topologi jaringan
+                    menggunakan Cisco Packet Tracer.
+
+                </p>
+
+            </div>
+
+            <div class="exp-card">
+
+                <div class="exp-line"></div>
+
+                <h3>
+                    LAN Configuration
+                </h3>
+
+                <p class="text"
+                   data-id="Melakukan konfigurasi jaringan LAN dan pengujian konektivitas."
+                   data-en="Configured LAN network and tested connectivity.">
+
+                    Melakukan konfigurasi jaringan LAN
+                    dan pengujian konektivitas.
+
+                </p>
+
+            </div>
+
+            <div class="exp-card">
+
+                <div class="exp-line"></div>
+
+                <h3>
+                    Network Troubleshooting
+                </h3>
+
+                <p class="text"
+                   data-id="Menganalisis dan memperbaiki permasalahan dasar jaringan komputer."
+                   data-en="Analyzed and solved basic computer networking issues.">
+
+                    Menganalisis dan memperbaiki
+                    permasalahan dasar jaringan komputer.
+
+                </p>
+
+            </div>
+
+            <div class="exp-card">
+
+                <div class="exp-line"></div>
+
+                <h3>
+                    HTML Portfolio Website
+                </h3>
+
+                <p class="text"
+                   data-id="Membuat website portfolio modern menggunakan HTML, CSS, dan JavaScript."
+                   data-en="Created a modern portfolio website using HTML, CSS, and JavaScript.">
+
+                    Membuat website portfolio modern
+                    menggunakan HTML, CSS, dan JavaScript.
+
+                </p>
 
             </div>
 
@@ -193,75 +445,67 @@
 
     <!-- SKILLS -->
 
-    <section id="skills" class="page-section">
+    <section id="skills" class="section">
 
-        <div class="section-wrapper">
+        <div class="section-title">
 
-            <div class="section-title">
+            <span class="text"
+                  data-id="Keterampilan"
+                  data-en="Skills">
 
-                <h2>
-                    Skills
-                </h2>
+                Keterampilan
+
+            </span>
+
+            <h2 class="text"
+                data-id="Kemampuan Profesional"
+                data-en="Professional Skills">
+
+                Kemampuan Profesional
+
+            </h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <i class="fa-solid fa-network-wired"></i>
+
+                <h3>
+                    Cisco
+                </h3>
 
             </div>
 
-            <div class="cards">
+            <div class="skill-card">
 
-                <div class="card">
+                <i class="fa-solid fa-server"></i>
 
-                    <h3>
-                        Networking
-                    </h3>
+                <h3>
+                    MikroTik
+                </h3>
 
-                    <p>
-                        Routing,
-                        Switching,
-                        VLAN,
-                        OSPF,
-                        NAT.
-                    </p>
+            </div>
 
-                </div>
+            <div class="skill-card">
 
-                <div class="card">
+                <i class="fa-solid fa-laptop-code"></i>
 
-                    <h3>
-                        Cisco
-                    </h3>
+                <h3>
+                    HTML & CSS
+                </h3>
 
-                    <p>
-                        Basic Cisco configuration
-                        dan troubleshooting jaringan.
-                    </p>
+            </div>
 
-                </div>
+            <div class="skill-card">
 
-                <div class="card">
+                <i class="fa-solid fa-shield-halved"></i>
 
-                    <h3>
-                        MikroTik
-                    </h3>
-
-                    <p>
-                        PPPoE,
-                        VLAN,
-                        dan basic router management.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>
-                        HTML & CSS
-                    </h3>
-
-                    <p>
-                        Responsive modern website
-                        dengan desain elegant.
-                    </p>
-
-                </div>
+                <h3>
+                    IT Support
+                </h3>
 
             </div>
 
@@ -269,137 +513,51 @@
 
     </section>
 
-    <!-- PROJECTS -->
+    <!-- CERTIFICATE -->
 
-    <section id="projects" class="page-section dark">
+    <section id="certificate" class="section dark">
 
-        <div class="section-wrapper">
+        <div class="section-title">
 
-            <div class="section-title">
+            <span class="text"
+                  data-id="Pencapaian"
+                  data-en="Achievement">
 
-                <h2>
-                    Projects & Documentation
-                </h2>
+                Pencapaian
 
-            </div>
+            </span>
 
-            <!-- DOCUMENTATION -->
+            <h2 class="text"
+                data-id="Sertifikat"
+                data-en="Certificate">
 
-            <div class="documentation-gallery">
+                Sertifikat
 
-                <div class="doc-card">
+            </h2>
 
-                    <img src="images/cisco.jpeg" alt="Cisco">
+        </div>
 
-                    <div class="doc-info">
+        <div class="certificate-box">
 
-                        <h3>
-                            Cisco Practice
-                        </h3>
+            <div class="certificate-image">
 
-                        <p>
-                            Dokumentasi konfigurasi dan praktik Cisco Networking Academy.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="doc-card">
-
-                    <img src="images/praktek.jpeg" alt="Praktek">
-
-                    <div class="doc-info">
-
-                        <h3>
-                            Networking Practice
-                        </h3>
-
-                        <p>
-                            Praktik jaringan komputer dan troubleshooting perangkat networking.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="doc-card">
-
-                    <img src="images/topologi.png" alt="Topologi">
-
-                    <div class="doc-info">
-
-                        <h3>
-                            Network Topology
-                        </h3>
-
-                        <p>
-                            Desain topologi jaringan dan implementasi VLAN serta routing.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="doc-card">
-
-                    <img src="images/topologi2.jpg" alt="Topologi2">
-
-                    <div class="doc-info">
-
-                        <h3>
-                            VLAN Structure
-                        </h3>
-
-                        <p>
-                            Simulasi struktur jaringan dan pembagian VLAN modern.
-                        </p>
-
-                    </div>
-
-                </div>
+                <img src="images/sertifikat.jpg" alt="Certificate">
 
             </div>
 
-            <!-- PROJECT CARD -->
+            <div class="certificate-info">
 
-            <div class="cards">
+                <h3>
+                    Networking Basics
+                </h3>
 
-                <div class="card">
+                <p>
+                    Cisco Networking Academy
+                </p>
 
-                    <h3>
-                        VoIP Network
-                    </h3>
-
-                    <p>
-                        Konfigurasi komunikasi VoIP dan pengujian jaringan komputer.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>
-                        VLAN & PPPoE
-                    </h3>
-
-                    <p>
-                        Implementasi VLAN dan PPPoE menggunakan router MikroTik.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h3>
-                        Personal Branding Website
-                    </h3>
-
-                    <p>
-                        Website modern menggunakan HTML dan CSS dengan tampilan elegant.
-                    </p>
-
-                </div>
+                <span>
+                    12 Juni 2025
+                </span>
 
             </div>
 
@@ -409,33 +567,63 @@
 
     <!-- CONTACT -->
 
-    <section id="contact" class="page-section">
+    <section id="contact" class="section">
 
-        <div class="section-wrapper">
+        <div class="section-title">
 
-            <div class="section-title">
+            <span class="text"
+                  data-id="Kontak"
+                  data-en="Contact">
 
-                <h2>
-                    Contact
-                </h2>
+                Kontak
 
-            </div>
+            </span>
 
-            <div class="contact-container">
+            <h2 class="text"
+                data-id="Mari Terhubung"
+                data-en="Let's Connect">
 
-                <a href="mailto:azwanakbar864@gmail.com" class="contact-card">
+                Mari Terhubung
+
+            </h2>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <a href="mailto:azwanakbar864@gmail.com" class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>
                     Email
-                </a>
+                </h3>
 
-                <a href="https://www.instagram.com/_wanzzyy?igsh=dnc1YmhkdHEwYjV4" target="_blank" class="contact-card">
+            </a>
+
+            <a href="https://www.instagram.com/_wanzzyy?igsh=dnc1YmhkdHEwYjV4"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <h3>
                     Instagram
-                </a>
+                </h3>
 
-                <a href="https://azwanakbar.blogspot.com/" target="_blank" class="contact-card">
+            </a>
+
+            <a href="https://azwanakbar.blogspot.com/"
+               target="_blank"
+               class="contact-card">
+
+                <i class="fa-brands fa-blogger-b"></i>
+
+                <h3>
                     Blogger
-                </a>
+                </h3>
 
-            </div>
+            </a>
 
         </div>
 
@@ -450,6 +638,8 @@
         </p>
 
     </footer>
+
+    <!-- SCRIPT -->
 
     <script src="script.js"></script>
 

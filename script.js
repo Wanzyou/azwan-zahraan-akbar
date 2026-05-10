@@ -1,34 +1,114 @@
-function showSection(sectionId){
+// ACTIVE MENU
 
-    const sections = document.querySelectorAll('.page-section');
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
 
     sections.forEach(section => {
 
-        section.classList.remove('active');
+        const sectionTop = section.offsetTop - 200;
 
-        section.style.opacity = "0";
-        section.style.transform = "translateY(30px)";
+        if(scrollY >= sectionTop){
+
+            current = section.getAttribute("id");
+
+        }
 
     });
 
-    setTimeout(() => {
+    navLinks.forEach(link => {
 
-        const activeSection = document.getElementById(sectionId);
+        link.classList.remove("active-link");
 
-        activeSection.classList.add('active');
+        if(link.getAttribute("href") === `#${current}`){
 
-        setTimeout(() => {
+            link.classList.add("active-link");
 
-            activeSection.style.opacity = "1";
-            activeSection.style.transform = "translateY(0)";
+        }
 
-        }, 50);
-
-    }, 250);
-
-    window.scrollTo({
-        top:0,
-        behavior:'smooth'
     });
 
-}
+});
+
+// CURSOR EFFECT
+
+const cursor = document.querySelector(".cursor-light");
+
+document.addEventListener("mousemove", (e) => {
+
+    cursor.style.left = e.clientX + "px";
+
+    cursor.style.top = e.clientY + "px";
+
+});
+
+// HEADER EFFECT
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 50){
+
+        header.style.background = "rgba(2,6,23,0.92)";
+
+    }else{
+
+        header.style.background = "rgba(2,6,23,0.65)";
+
+    }
+
+});
+
+// LANGUAGE
+
+const idBtn = document.getElementById("id-btn");
+
+const enBtn = document.getElementById("en-btn");
+
+const texts = document.querySelectorAll(".text, .nav-text");
+
+idBtn.addEventListener("click", () => {
+
+    texts.forEach(text => {
+
+        text.innerHTML = text.getAttribute("data-id");
+
+    });
+
+    idBtn.classList.add("active-lang");
+
+    enBtn.classList.remove("active-lang");
+
+});
+
+enBtn.addEventListener("click", () => {
+
+    texts.forEach(text => {
+
+        text.innerHTML = text.getAttribute("data-en");
+
+    });
+
+    enBtn.classList.add("active-lang");
+
+    idBtn.classList.remove("active-lang");
+
+});
+
+// 3D PROFILE EFFECT
+
+const profile3d = document.querySelector(".profile-3d-wrap");
+
+document.addEventListener("mousemove", (e) => {
+
+    let x = (window.innerWidth / 2 - e.pageX) / 35;
+    let y = (window.innerHeight / 2 - e.pageY) / 35;
+
+    profile3d.style.transform =
+    `rotateY(${-x}deg) rotateX(${y}deg)`;
+
+});
